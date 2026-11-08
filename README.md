@@ -2,6 +2,24 @@
 
 A **Streamlit in Snowflake** executive dashboard for hospital clinical and revenue-cycle performance. It runs natively inside Snowflake (Snowpark session) and reads from Gold-layer views in `HEALTHCARE_DB`, the top of a medallion pipeline (AWS S3 → Bronze → Silver → Gold).
 
+## Screenshots
+
+**Monthly clinical & financial trends** — 30-day readmission rate vs. claim denial rate, and billed charges vs. insurance paid:
+
+![Monthly clinical and financial trends](images/monthly-trends.png)
+
+**Department performance & payer denial charts:**
+
+![Department performance and payer denial charts](images/department-and-payer-charts.png)
+
+**Department & payer scorecard tables:**
+
+![Department and payer scorecard tables](images/scorecard-tables.png)
+
+**High-burden ICD-10 diagnosis cohorts:**
+
+![High-burden ICD-10 diagnosis cohorts](images/diagnosis-cohorts.png)
+
 ## What the dashboard shows
 
 **Executive KPI cards** — Total Encounters, 30-Day Readmission Rate, Average Length of Stay, Total Billed Charges, Claim Denial Rate, Average Days in AR.
@@ -37,6 +55,7 @@ A **Streamlit in Snowflake** executive dashboard for hospital clinical and reven
 | `snowflake.yml` | Streamlit-in-Snowflake project definition |
 | `pyproject.toml` | Python/package configuration |
 | `.streamlit/config.toml` | Streamlit theme configuration |
+| `images/` | Dashboard screenshots |
 
 ## Running it
 
